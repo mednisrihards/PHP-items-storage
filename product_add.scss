@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    min-width: 380px;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+.header {
+    background-color: #dda9dd;
+    margin: 30px;
+    padding: 0 25px;
+    border-radius: 15px;
+    height: 70px;
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+
+    span {
+        font-size: 2em;
+        color: #574b90;
+    }
+
+    input {
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        color: white;
+        background-color: #574b90;
+        font-size: 1em;
+        cursor: pointer;
+    }
+}
+
+form {
+    background-color: #dda9dd;
+    padding: 30px;
+    border-radius: 30px;
+    width: 50%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+
+    input, select {
+        font-size: 1.2em;
+        height: 40px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #574b90;
+        
+        &::placeholder {
+            color: #574b90;
+            opacity: 1;
+            font-size: 0.7em;
+        }
+    }
+
+    select {
+        font-size: .8em;
+        border: none;
+        width: 30%;
+    }
+
+    span {
+        margin: 15px 0 5px 0;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn{
+        background-color: #574b90;
+        color: white;
+        border-radius: 15px;
+        border: none;
+        align-self: center;
+        height: 60px;
+        width: 150px;
+        margin: 10px 0 0;
+    }
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        margin: 20px;
+
+        span {
+            font-size: 1.4em;
+        }
+    
+        input {
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+            color: white;
+            background-color: #574b90;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    }
+
+    form {
+        margin: 20px 20px;
+        width: unset;
+    }
+}

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    min-width: 380px;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+form {
+    background-color: #dda9dd;
+    margin: 30px;
+    padding: 0 25px;
+    border-radius: 15px;
+    height: 70px;
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+
+    span {
+        font-size: 2em;
+        color: #574b90;
+    }
+
+    input {
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        color: white;
+        background-color: #574b90;
+        font-size: 1em;
+        cursor: pointer;
+    }
+}
+
+.items{
+    position: absolute;
+    top: 150px;
+    left: 0;
+  }
+
+.container {
+    background-color: #dda9dd;
+    min-width: 300px;
+    height: 200px;
+    float: left;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow:
+        0 0px 6.8px -8px rgba(0, 0, 0, 0.135),
+        0 0px 54px -8px rgba(0, 0, 0, 0.27)
+    ;
+}
+
+.container > input {
+    float: left;
+}
+    
+.details {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .sku::before {
+        content: "SKU:  ";
+    }
+
+    .name::before {
+        content: "Item name:";
+    }
+
+    .price::before {
+        content: "Price:";
+    }
+
+    .size::before {
+        content: "Size:";
+    }
+
+    .weight::before {
+        content: "Weight:";
+    }
+
+    .dimensions::before {
+        content: "Dimensions (mm):";
+    }
+
+    .price::after {
+        content: " $";
+    }
+
+    .size::after {
+        content: " Mb";
+    }
+
+    .weight::after {
+        content: " Kg";
+    }
+
+    .sku::before,
+    .name::before,
+    .price::before,
+    .size::before,
+    .weight::before,
+    .dimensions::before{
+        font-weight: bold;
+        color: black;
+    }
+
+    .sku,
+    .name,
+    .price,
+    .size,
+    .weight,
+    .dimensions{
+        margin-bottom: 15px;
+        align-self: flex-end;
+        color: #574b90;
+    }
+
+    .sku::before,
+    .name::before,
+    .price::before,
+    .size::before,
+    .weight::before,
+    .dimensions::before{
+        position: absolute;
+        left: 0;
+    }
+    
+}
+    
+.left{
+    float: left;
+    margin: 20px 0px 0px 25px;
+}
+
+.right{
+    float: right;
+    margin: 20px 25px 0px 0px;
+}
+
+.btn{
+    font-size: 12em;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 30px;
+}
+
+@media only screen and (max-width: 700px) {
+    form {
+        display: block;
+        padding: 25px 10px;
+        span {
+            font-size: 1.4em;
+        }
+
+        .input {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                margin: 10px 10px;
+                width: 50%;
+            }
+
+            input:last-child {
+                min-width: 170px;
+            }
+        }
+
+        .items {
+            top: 200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    form{
+        .items {
+            top: 220px;
+        }
+    }
+}
