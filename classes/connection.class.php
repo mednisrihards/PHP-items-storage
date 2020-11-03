@@ -3,8 +3,8 @@
 class Connection {
     //CONNECTION TO DATABASE
     private $host = "localhost";
-    private $user = "root";
-    private $pw = "root";
+    private $user = "RihardsMednisCom";
+    private $pw = "RihardsMednisCom";
     private $dbname = "products";
     
     protected function connect(){

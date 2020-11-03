@@ -5,7 +5,7 @@ require_once ( "includes/autoloader.inc.php");
 if (isset($_POST['submit'])){
     $product = new ProductsView();
     $product->setProducts($_POST);
-    header("Location: product_list.php");
+    header("Location: index.php");
 };
 
 ?>
@@ -22,7 +22,7 @@ if (isset($_POST['submit'])){
 <body>
    <div class="header">
     <span>PRODUCT ADD</span>
-       <input type="submit" onclick="window.location.href = 'product_list.php';" value="Product list">
+       <input type="submit" onclick="window.location.href = 'index.php';" value="Product list">
     </div>
     <p>Products LISTING, ADDING and DELETING using PHP OOP, Javascript, HTML and Scss. </p>
 

@@ -6,7 +6,7 @@ if (isset($_POST['submit'])){
     $product = new ProductsView();
     $product->productDeleteRequest($_POST);
     unset($_POST);
-    header("Location: product_list.php");
+    header("Location: index.php");
 };
 //--------------------------------------------------------------------------------------------------      
 ?>
