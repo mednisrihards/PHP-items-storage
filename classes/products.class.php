@@ -58,6 +58,7 @@ class Products extends Connection {
     
 //METHOD TO ADD PRODUCT------------------------       
     protected function addProduct($obj){
+        $conn = new Connection();
 
     //CONVERTING OBJECT TO ARRAY
         $array = get_object_vars($this);
@@ -69,7 +70,7 @@ class Products extends Connection {
         $query=('INSERT INTO product_list (' . $columns . ') VALUES ("' .   $values . '")');
 
     //QUERY EXECUTION
-        $result = $this->connect()->query($query);
+        $result = $conn->connect()->query($query);
     }
 
 //METHOD TO DELETE PRODUCTS--------------------  
