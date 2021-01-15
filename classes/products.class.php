@@ -70,7 +70,6 @@ class Products extends Connection {
 
     //QUERY EXECUTION
         $result = $this->connect()->query($query);
-
     }
 
 //METHOD TO DELETE PRODUCTS--------------------  

@@ -50,8 +50,5 @@ class ProductsView extends Products {
     public function productDeleteRequest(array $data){
         $this->deleteProducts($data);
     }
-
-
-
 }
 
